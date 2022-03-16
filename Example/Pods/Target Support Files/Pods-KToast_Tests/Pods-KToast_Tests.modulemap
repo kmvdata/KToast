@@ -1,0 +1,6 @@
+framework module Pods_KToast_Tests {
+  umbrella header "Pods-KToast_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
