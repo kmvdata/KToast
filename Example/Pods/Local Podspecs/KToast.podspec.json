@@ -1,0 +1,22 @@
+{
+  "name": "KToast",
+  "version": "0.1.0",
+  "summary": "A short description of KToast.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kermit.kmvdata/KToast",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kermit.kmvdata": "kermit.mei@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/kermit.kmvdata/KToast.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "KToast/Classes/**/*"
+}

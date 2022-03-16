@@ -1,0 +1,16 @@
+PODS:
+  - KToast (0.1.0)
+
+DEPENDENCIES:
+  - KToast (from `../`)
+
+EXTERNAL SOURCES:
+  KToast:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KToast: 9bea9ba83193d1e73bc0ba4d63d651b96381432e
+
+PODFILE CHECKSUM: 2d09145c6f22504531cca3e3dfea9f538dd2bf70
+
+COCOAPODS: 1.11.2
