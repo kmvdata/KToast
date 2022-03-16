@@ -18,19 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A swift Toast lib.
                        DESC
 
-  s.homepage         = 'https://github.com/kermit.kmvdata/KToast'
+  s.homepage         = 'https://github.com/kmvdata/KToast'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'kermit.kmvdata' => 'kermit.mei@gmail.com' }
-  s.source           = { :git => 'https://github.com/kermit.kmvdata/KToast.git', :tag => s.version.to_s }
+  s.author           = { 'kmvdata' => 'kermit.mei@gmail.com' }
+  s.source           = { :git => 'https://github.com/kmvdata/KToast.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'KToast/Classes/**/*'
+  s.source_files = 'Classes/*'
   
   # s.resource_bundles = {
   #   'KToast' => ['KToast/Assets/*.png']
