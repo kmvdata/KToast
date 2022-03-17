@@ -15,7 +15,7 @@ public class KToast {
     class func heightOfString(font: UIFont, string:String, constrainedToWidth width: CGFloat) -> CGFloat {
         return NSString(string: string).boundingRect(with: CGSize(width: width, height: CGFloat(MAXFLOAT)),
                                                      options: NSStringDrawingOptions.usesLineFragmentOrigin,
-                                                     attributes: [NSAttributedStringKey.font: font],
+                                                     attributes: [NSAttributedString.Key.font: font],
                                                      context: nil).size.height
     }
     
@@ -61,7 +61,7 @@ public class KToast {
         tipLabel.layer.cornerRadius = 5
         
         tvc.view.addSubview(tipLabel)
-        tvc.view.bringSubview(toFront: tipLabel)
+        tvc.view.bringSubviewToFront(tipLabel)
         
         let toLabelY:CGFloat = labelHeight * 1.5
         let animatorIn = UIViewPropertyAnimator(duration: 0.2, curve: .easeOut) {
