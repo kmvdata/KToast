@@ -36,15 +36,29 @@ public class KToast {
         return base
     }
     
+    class func getTopWindow() -> UIWindow? {
+        let base = UIApplication.shared.connectedScenes.flatMap { ($0 as? UIWindowScene)?.windows ?? [] }.first { $0.isKeyWindow}?.rootViewController
+        
+        if let nav = base as? UINavigationController {
+            return nav.view.window
+        }
+        
+        if let tab = base as? UITabBarController {
+            return tab.view.window
+        }
+        
+        return base?.view.window
+    }
+    
     public static func showToast(text:String, textColor: UIColor = .white, textFont:UIFont = UIFont.systemFont(ofSize: 18.0), backgroundColor: UIColor = .black.withAlphaComponent(0.618)) {
-        guard let tvc = getTopViewController() else {
+        guard let topWindow = getTopWindow() else {
             return
         }
         
-        let lableWidth:CGFloat = tvc.view.frame.width * 0.8
-        let labelHeight = heightOfString(font: textFont, string: text, constrainedToWidth: lableWidth) + 16
+        let lableWidth:CGFloat = topWindow.frame.width * 0.8
+        let labelHeight = heightOfString(font: textFont, string: text, constrainedToWidth: lableWidth) + 36
         
-        let labelX:CGFloat = (tvc.view.frame.width - lableWidth) / 2
+        let labelX:CGFloat = (topWindow.frame.width - lableWidth) / 2
         
         let labelFrame = CGRect(x: labelX, y: -labelHeight, width: lableWidth, height: labelHeight)
         
@@ -60,8 +74,8 @@ public class KToast {
         tipLabel.layer.masksToBounds = true
         tipLabel.layer.cornerRadius = 5
         
-        tvc.view.addSubview(tipLabel)
-        tvc.view.bringSubviewToFront(tipLabel)
+        topWindow.addSubview(tipLabel)
+        topWindow.bringSubviewToFront(tipLabel)
         
         let toLabelY:CGFloat = labelHeight * 1.5
         let animatorIn = UIViewPropertyAnimator(duration: 0.25, curve: .easeOut) {
