@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
                BuildableName = "KToast_Example.app"
-               BlueprintName = "KToast_Example"
+               BlueprintName = "KToastExample"
                ReferencedContainer = "container:KToast.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,7 +30,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
                BuildableName = "KToast_Tests.xctest"
-               BlueprintName = "KToast_Tests"
+               BlueprintName = "KToastTests"
                ReferencedContainer = "container:KToast.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,7 +46,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
             BuildableName = "KToast_Example.app"
-            BlueprintName = "KToast_Example"
+            BlueprintName = "KToastExample"
             ReferencedContainer = "container:KToast.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -57,7 +57,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
                BuildableName = "KToast_Tests.xctest"
-               BlueprintName = "KToast_Tests"
+               BlueprintName = "KToastTests"
                ReferencedContainer = "container:KToast.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -79,7 +79,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
             BuildableName = "KToast_Example.app"
-            BlueprintName = "KToast_Example"
+            BlueprintName = "KToastExample"
             ReferencedContainer = "container:KToast.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -96,7 +96,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
             BuildableName = "KToast_Example.app"
-            BlueprintName = "KToast_Example"
+            BlueprintName = "KToastExample"
             ReferencedContainer = "container:KToast.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

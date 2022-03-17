@@ -64,7 +64,7 @@ public class KToast {
         tvc.view.bringSubviewToFront(tipLabel)
         
         let toLabelY:CGFloat = labelHeight * 1.5
-        let animatorIn = UIViewPropertyAnimator(duration: 0.2, curve: .easeOut) {
+        let animatorIn = UIViewPropertyAnimator(duration: 0.25, curve: .easeOut) {
             tipLabel.frame.origin.y = toLabelY
             tipLabel.alpha = 1.0
         }
