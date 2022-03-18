@@ -68,6 +68,7 @@ public class KToast {
         tipLabel.text = text
         tipLabel.alpha = 0.0
         tipLabel.textAlignment = .center
+        tipLabel.font = textFont
         tipLabel.backgroundColor = backgroundColor
         tipLabel.textColor = textColor
         

@@ -26,7 +26,20 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showToast(_ sender: Any) {
-        KToast.showToast(text: "n iOS 15 and later, the value of this property is true when the window .", textColor: .white)
+        let message = "Hello, I'm Toast! You can try to set more fonts and colors for me."
+        let index = Int.random(in: 0..<5)
+        switch index {
+        case 1:
+            KToast.showToast(text: message, backgroundColor: UIColor(red: 45/255, green: 185/255, blue: 76/255, alpha: 0.9))
+        case 2:
+            KToast.showToast(text: message, backgroundColor: UIColor(red: 191/255, green: 7/255, blue: 30/255, alpha: 0.9))
+        case 3:
+            KToast.showToast(text: message, textColor:.black, textFont: UIFont.boldSystemFont(ofSize: 24), backgroundColor: UIColor(red: 241/255, green: 191/255, blue: 70/255, alpha: 0.9))
+        case 4:
+            KToast.showToast(text: message, backgroundColor: UIColor(red: 61/255, green: 204/255, blue: 234/255, alpha: 0.9))
+        default:
+            KToast.showToast(text: message)
+        }
     }
 }
 
