@@ -78,7 +78,7 @@ public class KToast {
         topWindow.addSubview(tipLabel)
         topWindow.bringSubviewToFront(tipLabel)
         
-        let toLabelY:CGFloat = labelHeight * 1.5
+        let toLabelY:CGFloat = 96
         let animatorIn = UIViewPropertyAnimator(duration: 0.25, curve: .easeOut) {
             tipLabel.frame.origin.y = toLabelY
             tipLabel.alpha = 1.0
