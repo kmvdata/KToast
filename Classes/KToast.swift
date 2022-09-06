@@ -71,6 +71,7 @@ public class KToast {
         tipLabel.font = textFont
         tipLabel.backgroundColor = backgroundColor
         tipLabel.textColor = textColor
+        tipLabel.font = textFont
         
         tipLabel.layer.masksToBounds = true
         tipLabel.layer.cornerRadius = 5
