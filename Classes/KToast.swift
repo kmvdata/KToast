@@ -12,14 +12,14 @@ public class KToast {
     public init() {
     }
     
-    class func heightOfString(font: UIFont, string:String, constrainedToWidth width: CGFloat) -> CGFloat {
+    public class func heightOfString(font: UIFont, string:String, constrainedToWidth width: CGFloat) -> CGFloat {
         return NSString(string: string).boundingRect(with: CGSize(width: width, height: CGFloat(MAXFLOAT)),
                                                      options: NSStringDrawingOptions.usesLineFragmentOrigin,
                                                      attributes: [NSAttributedString.Key.font: font],
                                                      context: nil).size.height
     }
     
-    class func getTopViewController(base: UIViewController? = UIApplication.shared.connectedScenes.flatMap { ($0 as? UIWindowScene)?.windows ?? [] }.first { $0.isKeyWindow}?.rootViewController) -> UIViewController? {
+    public class func getTopViewController(base: UIViewController? = UIApplication.shared.connectedScenes.flatMap { ($0 as? UIWindowScene)?.windows ?? [] }.first { $0.isKeyWindow}?.rootViewController) -> UIViewController? {
         
         if let nav = base as? UINavigationController {
             return getTopViewController(base: nav.visibleViewController)
@@ -36,7 +36,7 @@ public class KToast {
         return base
     }
     
-    class func getTopWindow() -> UIWindow? {
+    public class func getTopWindow() -> UIWindow? {
         let base = UIApplication.shared.connectedScenes.flatMap { ($0 as? UIWindowScene)?.windows ?? [] }.first { $0.isKeyWindow}?.rootViewController
         
         if let nav = base as? UINavigationController {
@@ -50,7 +50,7 @@ public class KToast {
         return base?.view.window
     }
     
-    public static func showToast(text:String, textColor: UIColor = .white, textFont:UIFont = UIFont.systemFont(ofSize: 18.0), backgroundColor: UIColor = .black.withAlphaComponent(0.618)) {
+    public class func showToast(text:String, textColor: UIColor = .white, textFont:UIFont = UIFont.systemFont(ofSize: 18.0), backgroundColor: UIColor = .black.withAlphaComponent(0.618)) {
         guard let topWindow = getTopWindow() else {
             return
         }
